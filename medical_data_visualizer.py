@@ -3,7 +3,6 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Import the data
 df = pd.read_csv("medical_examination.csv")
 
 # Add 'overweight' column (BMI > 25 is overweight)
