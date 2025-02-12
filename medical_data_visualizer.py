@@ -14,7 +14,6 @@ df['gluc'] = (df['gluc'] > 1).astype(int)
 
 # Draw Categorical Plot
 def draw_cat_plot():
-    # Convert data to long format
     df_cat = pd.melt(df, id_vars=["cardio"], 
                      value_vars=['cholesterol', 'gluc', 'smoke', 'alco', 'active', 'overweight'])
 
