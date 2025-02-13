@@ -12,7 +12,7 @@ df['overweight'] = ((df['weight'] / (df['height'] / 100) ** 2) > 25).astype(int)
 df['cholesterol'] = (df['cholesterol'] > 1).astype(int)
 df['gluc'] = (df['gluc'] > 1).astype(int)
 
-# Draw Categorical Plot
+# Draw Categorical plot
 def draw_cat_plot():
     df_cat = pd.melt(df, id_vars=["cardio"], 
                      value_vars=['cholesterol', 'gluc', 'smoke', 'alco', 'active', 'overweight'])
