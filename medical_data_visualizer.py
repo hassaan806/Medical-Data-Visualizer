@@ -26,7 +26,7 @@ def draw_cat_plot():
     fig = fig.fig  # Convert FacetGrid to Matplotlib figure
     return fig
 
-# Draw Heat Map
+# Draw Heat Map plot
 def draw_heat_map():
     # Clean the data
     df_heat = df[
